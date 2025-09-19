@@ -76,15 +76,15 @@ Fully Connected:
 
 ## 📊 Iteration Performance Summary
 
-| Iteration | Description | Key Concepts | Best Test Accuracy | Epochs | Parameters | Total Layers | Conv Layers | MaxPool | Linear | BatchNorm | Dropout | Notebook Link |
-|-----------|-------------|--------------|-------------------|--------|------------|--------------|-------------|---------|--------|-----------|---------|---------------|
-| **1** | Baseline | MaxPool, Fully connected, Padding, ReLU, 1x1 | **82.1%** | 1 | 26,714 | 8 | 5 | 2 | 1 | 0 | 0 | [📓 Iteration 1](https://github.com/rraghu214/mnist_digit_recognition/blob/main/MNIST_Digits_Training_ERA_Iteration-1.ipynb) |
-| **2** | With 5 epochs & < 25K params | Epoch & Parameters tuning | **98.35%** | 5 | 24,210 | 10 | 7 | 2 | 1 | 0 | 0 | [📓 Iteration 2](https://github.com/rraghu214/mnist_digit_recognition/blob/main/MNIST_Digits_Training_ERA_Iteration-2.ipynb) |
-| **3** | With 20 epochs & < 20K params | Epoch & Parameter tuning, layers reduction | **99.46%** | 20 | 18,374 | 8 | 5 | 2 | 1 | 0 | 0 | [📓 Iteration 3](https://github.com/rraghu214/mnist_digit_recognition/blob/main/MNIST_Digits_Training_ERA_Iteration-3.ipynb) |
-| **4** | With Batch Normalization | Introduced Batch Normalization | **99.58%** | 20 | 20,514 | 10 | 5 | 2 | 1 | 2 | 0 | [📓 Iteration 4](https://github.com/rraghu214/mnist_digit_recognition/blob/main/MNIST_Digits_Training_ERA_Iteration-4.ipynb) |
-| **5** | Tuning below 20K | Parameter optimization | **99.55%** ⭐ | 20 | 18,422 | 10 | 5 | 2 | 1 | 2 | 0 | [📓 Iteration 5](https://github.com/rraghu214/mnist_digit_recognition/blob/main/MNIST_Digits_Training_ERA_Iteration-5.ipynb) ⭐ |
-| **6** | Dropout at last layer | Dropout | **99.2%** | 20 | 18,422 | 11 | 5 | 2 | 1 | 2 | 1 | [📓 Iteration 6](https://github.com/rraghu214/mnist_digit_recognition/blob/main/MNIST_Digits_Training_ERA_Iteration-6.ipynb) |
-| **7** | Dropout after each layer | Dropout | **98.64%** | 20 | 18,422 | 14 | 5 | 2 | 1 | 2 | 4 | [📓 Iteration 7](https://github.com/rraghu214/mnist_digit_recognition/blob/main/MNIST_Digits_Training_ERA_Iteration-7.ipynb) |
+| # | Description | Notebook Link | Best Test Accuracy | Epochs | Parameters | Total Layers | Conv Layers | MaxPool | Linear | BatchNorm | Dropout |
+|-----------|-------------|---------------|-------------------|--------|------------|--------------|-------------|---------|--------|-----------|---------|
+| **1** | Baseline - MaxPool, Fully connected, Padding, ReLU, 1x1 | [📓 Iteration 1](https://github.com/rraghu214/mnist_digit_recognition/blob/main/MNIST_Digits_Training_ERA_Iteration-1.ipynb) | **82.1%** | 1 | 26,714 | 8 | 5 | 2 | 1 | 0 | 0 |
+| **2** | With 5 epochs & < 25K params - Epoch & Parameters tuning | [📓 Iteration 2](https://github.com/rraghu214/mnist_digit_recognition/blob/main/MNIST_Digits_Training_ERA_Iteration-2.ipynb) | **98.35%** | 5 | 24,210 | 10 | 7 | 2 | 1 | 0 | 0 |
+| **3** | With 20 epochs & < 20K params - Epoch & Parameter tuning, layers reduction | [📓 Iteration 3](https://github.com/rraghu214/mnist_digit_recognition/blob/main/MNIST_Digits_Training_ERA_Iteration-3.ipynb) | **99.46%** | 20 | 18,374 | 8 | 5 | 2 | 1 | 0 | 0 |
+| **4** | With Batch Normalization - Introduced Batch Normalization | [📓 Iteration 4](https://github.com/rraghu214/mnist_digit_recognition/blob/main/MNIST_Digits_Training_ERA_Iteration-4.ipynb) | **99.58%** | 20 | 20,514 | 10 | 5 | 2 | 1 | 2 | 0 |
+| **5** | Tuning below 20K - Parameter optimization | [📓 Iteration 5](https://github.com/rraghu214/mnist_digit_recognition/blob/main/MNIST_Digits_Training_ERA_Iteration-5.ipynb) ⭐ | **99.55%** ⭐ | 20 | 18,422 | 10 | 5 | 2 | 1 | 2 | 0 |
+| **6** | Dropout at last layer - Dropout | [📓 Iteration 6](https://github.com/rraghu214/mnist_digit_recognition/blob/main/MNIST_Digits_Training_ERA_Iteration-6.ipynb) | **99.2%** | 20 | 18,422 | 11 | 5 | 2 | 1 | 2 | 1 |
+| **7** | Dropout after each layer - Dropout | [📓 Iteration 7](https://github.com/rraghu214/mnist_digit_recognition/blob/main/MNIST_Digits_Training_ERA_Iteration-7.ipynb) | **98.64%** | 20 | 18,422 | 14 | 5 | 2 | 1 | 2 | 4 |
 
 ## 🏆 Best Model: Iteration 5
 
@@ -183,26 +183,14 @@ For MNIST digit recognition:
 
 ## 📁 Notebook Links
 
-- [Iteration 1: Baseline](https://github.com/rraghu214/
-mnist_digit_recognition/blob/main/
-MNIST_Digits_Training_ERA_Iteration-1.ipynb)
-- [Iteration 2: Parameter Tuning](https://github.com/rraghu214/
-mnist_digit_recognition/blob/main/
-MNIST_Digits_Training_ERA_Iteration-2.ipynb)
-- [Iteration 3: Extended Training](https://github.com/rraghu214/
-mnist_digit_recognition/blob/main/
-MNIST_Digits_Training_ERA_Iteration-3.ipynb)
-- [Iteration 4: Batch Normalization](https://github.com/rraghu214/
-mnist_digit_recognition/blob/main/
-MNIST_Digits_Training_ERA_Iteration-4.ipynb)
-- [Iteration 5: Best Model](https://github.com/rraghu214/
-mnist_digit_recognition/blob/main/
-MNIST_Digits_Training_ERA_Iteration-5.ipynb) ⭐
-- [Iteration 6: Single Dropout](https://github.com/rraghu214/
-mnist_digit_recognition/blob/main/
-MNIST_Digits_Training_ERA_Iteration-6.ipynb)
-- [Iteration 7: Multiple Dropout](https://github.com/rraghu214/
-mnist_digit_recognition/blob/main/
-MNIST_Digits_Training_ERA_Iteration-7.ipynb)
+| Iteration | Description | Link |
+|-----------|-------------|------|
+| **1** | Baseline | [📓 Iteration 1](https://github.com/rraghu214/mnist_digit_recognition/blob/main/MNIST_Digits_Training_ERA_Iteration-1.ipynb) |
+| **2** | Parameter Tuning | [📓 Iteration 2](https://github.com/rraghu214/mnist_digit_recognition/blob/main/MNIST_Digits_Training_ERA_Iteration-2.ipynb) |
+| **3** | Extended Training | [📓 Iteration 3](https://github.com/rraghu214/mnist_digit_recognition/blob/main/MNIST_Digits_Training_ERA_Iteration-3.ipynb) |
+| **4** | Batch Normalization | [📓 Iteration 4](https://github.com/rraghu214/mnist_digit_recognition/blob/main/MNIST_Digits_Training_ERA_Iteration-4.ipynb) |
+| **5** | Best Model ⭐ | [📓 Iteration 5](https://github.com/rraghu214/mnist_digit_recognition/blob/main/MNIST_Digits_Training_ERA_Iteration-5.ipynb) ⭐ |
+| **6** | Single Dropout | [📓 Iteration 6](https://github.com/rraghu214/mnist_digit_recognition/blob/main/MNIST_Digits_Training_ERA_Iteration-6.ipynb) |
+| **7** | Multiple Dropout | [📓 Iteration 7](https://github.com/rraghu214/mnist_digit_recognition/blob/main/MNIST_Digits_Training_ERA_Iteration-7.ipynb) |
 
 ✨ This comprehensive study demonstrates the importance of systematic experimentation in deep learning model development!
